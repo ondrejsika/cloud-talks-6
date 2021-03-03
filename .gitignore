@@ -15,3 +15,6 @@ terraform-provider-rke-tmp-*
 
 # Kubernetes
 kubeconfig.yml
+
+/skaffold/.helm-values/cloud-talks-demo.dev.yml
+!*.EXAMPLE.*

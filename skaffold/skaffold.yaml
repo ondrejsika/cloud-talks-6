@@ -1,0 +1,15 @@
+apiVersion: skaffold/v2beta10
+kind: Config
+build:
+  artifacts:
+    - image: reg.istry.cz/cloud-talks-demo
+      context: ./cloud-talks-demo
+deploy:
+  helm:
+    releases:
+      - name: demo
+        chartPath: ./charts/cloud-talks-demo
+        artifactOverrides:
+          image: reg.istry.cz/cloud-talks-demo
+        valuesFiles:
+          - ./.helm-values/cloud-talks-demo.dev.yml
