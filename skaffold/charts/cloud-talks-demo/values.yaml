@@ -1,6 +1,3 @@
-# Required
-host:
-
 # Optional
 replicas: 1
-image: reg.istry.cz/trz/node-js-1
+image: reg.istry.cz/cloud-talks-demo
